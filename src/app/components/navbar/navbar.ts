@@ -34,7 +34,8 @@ export class Navbar {
     this.isScrolled.set(document.documentElement.scrollTop > 50);
 
       if (isPlatformBrowser(this.platformId)) {
-  const scrollOffset = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;      const logoElement = this.logoLink.nativeElement;
+  const scrollOffset = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;  
+      const logoElement = this.logoLink.nativeElement;
 
       // 4. Usamos Renderer2 para añadir/quitar clases
       if (scrollOffset > 50) {
